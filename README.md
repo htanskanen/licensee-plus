@@ -61,7 +61,7 @@ one of three forms:
 
 All ignore rules are case-insensitive.
 
-Where the optional property `requirePackageLicenseMatch` is `true`, any file-level license hits from ClearlyDefined that does not match the package standard license metadata will cause an error. False by default.
+Where the optional property `requirePackageLicenseMatch` is `true`, any file-level license hit from ClearlyDefined that does not match the package standard license metadata will cause an error. False by default.
 
 Where the optional property `requireClearlyDefined` is `true`, dependencies for which no file-level data is available from ClearlyDefined will cause an error. False by default.
 
