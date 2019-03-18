@@ -67,10 +67,10 @@ Where the optional property `requireClearlyDefined` is `true`, dependencies for 
 
 # Use
 
-To install and use `licensee-plus` globally:
+To install and use `licensee-plus` globally (it has not been published):
 
 ```bash
-npm install --global licensee-plus
+npm install --global henritns/licensee-plus
 cd your-package
 licensee-plus --init
 licensee-plus
@@ -82,7 +82,7 @@ To install it as a development dependency of your package:
 
 ```bash
 cd your-package
-npm install --save-dev licensee-plus
+npm install --save-dev henritns/licensee-plus
 ```
 
 Consider adding `licensee-plus` to your npm scripts:
