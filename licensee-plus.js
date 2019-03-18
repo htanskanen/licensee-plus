@@ -9,8 +9,8 @@ var USAGE = [
   "Check npm package dependency license metadata and package data from ClearlyDefined against rules.",
   "",
   "Usage:",
-  "  licensee [options]",
-  "  licensee --license=EXPRESSION [--whitelist=LIST] [options]",
+  "  licensee-plus [options]",
+  "  licensee-plus --license=EXPRESSION [--whitelist=LIST] [options]",
   "",
   "Options:",
   "  --init                         Create a .licensee.json file.",
@@ -87,9 +87,9 @@ if (options["--init"]) {
       die(
         [
           "Cannot read " + configurationPath + ".",
-          "Create " + configurationPath + " with licensee --init",
+          "Create " + configurationPath + " with licensee-plus --init",
           "or configure with --license and --whitelist.",
-          "See licensee --help for more information."
+          "See licensee-plus --help for more information."
         ].join("\n")
       );
     } else {
