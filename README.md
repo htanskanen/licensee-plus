@@ -1,4 +1,4 @@
-Check npm package dependency license metadata and package data from ClearlyDefined against rules. This is based on and extends the functionality of [licensee.js][licensee]. Experimental, not stable.
+Check npm package dependency license metadata and package data from ClearlyDefined against rules. This is based on and extends the functionality of [licensee.js][licensee] (6.1.0) but does not currently support its newer functionality and config format. Experimental, not stable.
 
 [licensee]: https://github.com/jslicense/licensee.js/
 
