@@ -38,7 +38,11 @@ function licenseePlus(config, path, callback) {
 
 function checkAgainstClearlyApi(dependencies, config, callback) {
   dependencies.forEach(function(d) {
-    d.coordinate = "npm/npmjs/-/" + d.name + "/" + d.version;
+    if (d.name.indexOf('/') > -1) {
+      d.coordinate = "npm/npmjs/" + d.name.split('/')[0] + "/" + d.name.split('/')[1] + "/" + d.version;
+    } else {
+      d.coordinate = "npm/npmjs/-/" + d.name + "/" + d.version;
+    }
   });
   var coords = dependencies.map(function(d) {
     return d.coordinate;
